@@ -1,3 +1,4 @@
+// JavaScript code for the carousel
 document.addEventListener("DOMContentLoaded", function () {
   const imagesContainer = document.querySelector(".carousel-images");
   const carouselItems = document.querySelectorAll(".carousel-item");
@@ -74,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   startAutoScroll();
 });
 
+// JavaScript code for the image modal
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("image-modal");
   const modalImage = document.getElementById("modal-image");
@@ -106,4 +108,41 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "none";
     }
   });
+});
+// JavaScript code for the hamburger menu
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  // Toggle the nav-links visibility
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+});
+// JavaScript code for Navbar
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarContainer = document.getElementById("navbar");
+
+  // Fetch the navbar.html file and insert it into the #navbar div
+  fetch("navbar.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load navbar.html");
+      }
+      return response.text();
+    })
+    .then((html) => {
+      navbarContainer.innerHTML = html;
+
+      // Reinitialize any JavaScript functionality for the navbar (e.g., hamburger menu)
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading navbar:", error);
+    });
 });
