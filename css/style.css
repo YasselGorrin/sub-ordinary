@@ -13,7 +13,7 @@ body::before {
     position: fixed;
     width: 125vw;
     height: 125vw;
-    background: url(../images/vol1_cover3.webp) ;
+    background: url(../images/vol1_cover3.png) ;
     background-repeat: repeat-y repeat-x;
     background-size:cover ;
     opacity: 0.7;
@@ -352,7 +352,7 @@ z-index: 1;
 @media (max-width: 768px) {
   /*Background image adjustments */
   body {
-    background: url(../images/Sub-O_phone_background.webp); /* Use a different background image for mobile */
+    background: url(../images/Sub-O_phone_background.jpg); /* Use a different background image for mobile */
     background-repeat: repeat-y; /* Prevent tiling */
     background-size: cover; /* Ensure the background covers the entire screen */
     background-position: center; /* Center the background image */
