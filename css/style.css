@@ -30,6 +30,9 @@ body::before {
     background-color: black;
     padding: 15px 20px;
 }
+.logo img {
+    width: 20vw;
+}
 .hamburger {
   display: none; /* Hidden by default */
   font-size: 2rem;
