@@ -210,10 +210,6 @@ input, textarea {
     position: relative;
     flex: 0 0 100%; 
 }
-.carousel-item img {
-    width: 100%;
-    height: 85vh;
-}
 .carouselb {
     position: absolute;
     top: 50%;
