@@ -45,6 +45,12 @@
     </a>
   </div>
 <script src="java/script.js" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+}
+</script>
+
 </body>
 <footer>
     <div class="contact-section">
